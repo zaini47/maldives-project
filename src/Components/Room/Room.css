@@ -1,0 +1,99 @@
+.hero {
+  background: linear-gradient(
+      0deg,
+      rgba(42, 48, 59, 0.35) 0%,
+      rgba(42, 48, 59, 0.35) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero .text {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.Servicestext {
+  width: 50%;
+  margin: auto;
+}
+.fnt-set19 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 48px;
+  color: #2a303b;
+}
+.row-set {
+  display: flex;
+  justify-content: space-between;
+}
+.set-border {
+  border-right: 1px solid #636a7613;
+}
+.hero2 {
+  background: linear-gradient(
+      0deg,
+      rgba(42, 48, 59, 0.35) 0%,
+      rgba(42, 48, 59, 0.35) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  z-index: -1;
+  width: 100%;
+}
+
+.hero2 .text {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////? */
+.elipses {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.room-btn {
+  display: flex;
+  padding: 8.633px;
+  justify-content: center;
+  align-items: center;
+  gap: 8.633px;
+  border-radius: 6.906px;
+  border: 0;
+  background: var(--Hotel-Primary, #1cc3b2);
+  color: #fff;
+}
+.roomInfo {
+  border: 1px solid #636a7620;
+  text-align: center;
+}
+
+.start-round {
+  border-radius: 8px 0 0 8px;
+}
+
+.end-round {
+  border-radius: 0px 8px 8px 0px;
+}
+
+.booking {
+  padding: 8.633px;
+  border-radius: 50px;
+  background: var(--Hotel-Primary, #1cc3b2);
+  border: 0;
+  color: #fff;
+}

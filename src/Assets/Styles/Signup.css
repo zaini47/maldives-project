@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@500&family=Poppins&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Tapestry&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --hotel-primary: #1cc3b2;
+  --hotel-grey: #636a76;
+  --text-dark :  #2A303B;
+}
+.text-dar{
+    color: var(--text-dark) !important;
+}
+.hotel-primary {
+  color: var(--hotel-primary);
+}
+.hotel-grey {
+  color: var(--hotel-grey);
+}
+.logo {
+  color: var(--hotel-primary);
+  font-family: "Tapestry", serif !important;
+  font-size: 58px;
+}
+.Setlogo {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+}
+.bg-img2 {
+  background: 
+  linear-gradient(
+      0deg,
+      rgba(34, 72, 93, 0.4) 0%,
+      rgba(34, 72, 93, 0.4) 100%
+    ),
+    url(../Images/sidenav-bg.png), lightgray 50% / cover no-repeat;
+  border-radius: 0px 50px 50px 0px;
+  box-shadow: 0px 0px 54px 5px rgba(20, 20, 20, 0.10);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 167vh;
+}
+.fnt-set1 {
+  font-family: "DM Sans", serif;
+  font-size: 60px;
+}
+.fnt-set2 {
+  font-family: "Inter", serif;
+  font-size: 20px;
+}
+.fnt-set3 {
+  font-family: "Inter", serif;
+  font-size: 36px;
+}
+.fnt-set4 {
+  font-family: "Inter", serif;
+  font-feature-settings: "salt";
+  font-size: 20px;
+  color: var(--hotel-primary);
+}
+.fnt-set5 {
+  font-size: 18.667px;
+  font-family: "Inter", serif;
+  font-feature-settings: "clig" off, "liga" off;
+}
+.fnt-set6 {
+  font-size: 18.667px;
+  font-family: "Inter", serif;
+  font-feature-settings: "clig" off, "liga" off;
+}
+.fnt-set7 {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+}
+.fnt-set8 {
+    font-size: 16px;
+    font-family: "Inter", serif;
+    color: #636a76;
+  }
+.login-box {
+  width: 70%;
+  margin: auto;
+}
+.login-box p a {
+  color: var(--hotel-primary);
+}
+a {
+  text-decoration: none !important;
+}
+.fw-700{
+    font-weight: 700;
+  }
+.fw-400{
+    font-weight: 400;
+  }
+.center-line-text-container {
+  position: relative;
+  text-align: center;
+}
+
+.center-line {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #636a76;
+}
+.centered-text {
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  color: var(--hotel-grey);
+  z-index: 1;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", serif;
+  font-size: 16px;
+}
+.ico {
+  width: 100%;
+  justify-content: space-evenly;
+}
+.w-95{
+    width: 95%;
+  }

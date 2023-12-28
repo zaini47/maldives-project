@@ -1,0 +1,33 @@
+.hero4 {
+  background: linear-gradient(
+      0deg,
+      rgba(42, 48, 59, 0.35) 0%,
+      rgba(42, 48, 59, 0.35) 100%
+    ),
+    url(../../Assets/Images/bg-about.png), lightgray 50% / cover no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 90vh;
+  z-index: -1;
+  width: 100%;
+}
+.hero4 .text {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.set1 {
+  width: 460px;
+}
+.textt {
+  width: 50%;
+  margin: auto;
+}
+.fnt-set18 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 52px;
+  color: #2A303B;
+}

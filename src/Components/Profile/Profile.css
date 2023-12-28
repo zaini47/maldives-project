@@ -1,0 +1,26 @@
+:root {
+    --primary-color: #1cc3b2;
+    --Dm: "DM Sans", sans-serif;
+    --inter: "Inter", sans-serif;
+    --text-dark: #2a303b;
+    --text-mid-light: #1cc3b2;
+    --text-light: #636a76;
+    --logout-color: #f62f2f;
+    --Hotel-Grey: #636A76;
+  }
+
+.profile:active{
+    color: var(--Hotel-Primary);
+}
+.Hotel-Grey{
+    color: var(--Hotel-Grey);
+}
+.primary-color{
+    color: var(--primary-color);
+}
+.custom_svg{
+    width: 16px;
+  height: 19.556px;
+  flex-shrink: 0;
+  color: var(--Hotel-Grey);
+  }

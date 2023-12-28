@@ -1,0 +1,106 @@
+.custom_ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.86px;
+  cursor: pointer;
+}
+.custom_ul .custom_li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13.72px;
+  color: #636a76;
+}
+.custom_li .custom_next,
+.custom_nextA {
+  display: flex;
+  width: 43.902px;
+  height: 43.902px;
+  padding: 13.72px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13.72px;
+  border-radius: 8px !important;
+  border: 0.686px solid #636a76;
+  background: none;
+  font-size: 16px;
+  color: #636a76;
+}
+.custom_li .custom_previous,
+.custom_previousB {
+  display: flex;
+  width: 43.902px;
+  height: 43.902px;
+  padding: 13.72px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13.72px;
+  border-radius: 8px !important;
+  border: 0.686px solid #636a76;
+  background: none;
+  font-size: 16px;
+  color: #636a76;
+}
+.custom_ul .custom_li .custom_A {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13.72px;
+  color: #636a76;
+  width: 43.902px;
+  height: 43.902px;
+  padding: 13.72px;
+  border-radius: 8px !important;
+  border: 0.686px solid #636a76;
+}
+.custom_ul .custom_li .custom_a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13.72px;
+  color: #636a76;
+  width: 43.902px;
+  height: 43.902px;
+  padding: 13.72px;
+  border-radius: 8px !important;
+  border: 0.686px solid #636a76;
+}
+.custom_ul .custom_li:active {
+  background-color: #1cc3b2;
+  border-radius: 8px !important;
+  color: white !important;
+}
+.custom_ul .custom_li a:active {
+  background-color: #1cc3b2;
+  border-radius: 8px !important;
+  color: white !important;
+}
+.custom_ul .custom_li a:hover {
+  background-color: #1cc3b2;
+  border-radius: 8px !important;
+  color: white !important;
+}
+.custom_li .custom_previous,
+.custom_previousB:hover {
+  background-color: #1cc3b2;
+  border-radius: 8px !important;
+  color: white !important;
+}
+.custom_li .custom_next,
+.custom_nextA:hover {
+  background-color: #1cc3b2;
+  border-radius: 8px !important;
+  color: white !important;
+}
+.previous{
+  list-style-type: none;
+}
+.custom_next{
+  list-style-type: none;
+}
