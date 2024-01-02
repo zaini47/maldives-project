@@ -11,7 +11,7 @@ import starico from "../../Assets/Images/rates.jpg";
 import InputFeilds from '../Reuseable/InputFeilds'
 import Button from '../Reuseable/Button';
 import '../Blog/blog.css'
-import Banners from "../Reuseable/Banner";          
+import Banners from "../Reuseable/Banner";
 
 
 function Blogdetail() {
@@ -27,7 +27,7 @@ function Blogdetail() {
         { id: "3", clientimg: client3, title: "Brandon Kelley", detail: "Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.", date: "27 August,2022", }
     ];
     return (
-        
+
         <>
             <Navbar />
             <Hero
@@ -40,7 +40,7 @@ function Blogdetail() {
             <div className="container-fluid">
                 <div className="container py-4">
                     <div className="row">
-                        <div className="col-sm-12 col-md-8 row d-flex   px-5" >
+                        <div className="col-sm-12 col-md-12 col-lg-8   px-5" >
                             <p>{items.items.Ldescrip[1]}</p>
                             <p>{items.items.Ldescrip[2]}</p>
                             <p>{items.items.Ldescrip[3]}</p>
@@ -57,68 +57,71 @@ function Blogdetail() {
                                 </div>
                             </div>
                             <p className='fs-32 ff-p'>03 Comments</p>
+
+
                             <div className='border-bottom'>
                                 {rates.map((item) => (
                                     <>
                                         <div className="row my-2">
-
-                                            <div className="col-md-3 text-center set-border">
-                                                <img src={item.clientimg} className="clientimg img-fluid w-100" alt="client" />
+                                            <div className=" col-md-3 text-center set-border">
+                                                <img src={item.clientimg} className="clientimg img-fluid  width rounded-190" alt="client" />
                                             </div>
                                             <div className="col-md-9 mb-4 p-4">
-                                                <p>{item.date}</p>
+                                                <p className='fs-16 fw-400 text--light ff-work'>{item.date}</p>
                                                 <div className="row-set">
-                                                    <div className="title"><p>{item.title}</p></div>
+                                                    <div className="title"><p className='fs-26 text-d fw-500 ff-work'>{item.title}</p></div>
                                                     <div className="icons">
                                                         <img src={starico} alt="" />
                                                     </div>
                                                 </div>
-                                                <p>{item.detail}</p>
+                                                <p className='fs-20 ff-work text--light fw-400'>{item.detail}</p>
                                             </div>
                                         </div>
                                     </>
-
                                 ))}
                             </div>
-                            <div className="container">
-                                <div className="row text-start">
+
+
+
+                            <div className="">
+                                <div className="row text-start text-sm-center">
                                     <p className='fs-52'>Leave Message</p>
-                                    <div className="col-sm-12 col-md-6">
+                                    <div className="col-sm-12 col-md-12 col-lg-6">
                                         <InputFeilds
                                             placeholder="Your Name"
-                                            inputStyle="bloginput1"
+                                            inputStyle="bloginput1 w-100"
                                         />
                                     </div>
-                                    <div className="col-sm-12 col-md-6">
+                                    <div className="col-sm-12 col-md-12 col-lg-6">
                                         <InputFeilds
                                             type="email"
                                             placeholder="Your Email"
-                                            inputStyle="bloginput1"
+                                            inputStyle="bloginput1 w-100"
                                         />
                                     </div>
-                                    <div className="col-sm-12">
+                                    <div className="col-sm-12 ">
                                         <textarea
                                             placeholder="Your Message"
                                             className="contactinput2"
                                         />
                                     </div>
-                                    <div className="col-sm-12 d-flex justify-content-start align-items-center my-5">
+                                    <div className="col-sm-12 d-flex justify-content-start align-items-center my-5 w-sm">
                                         <Button
                                             name="Post Message"
-                                            batn="contactBtn"
+                                            batn="contactBtn w-sm"
                                         />
                                     </div>
                                 </div>
 
                             </div >
                         </div>
-                        <div className='col-sm-12 col-md-4 '>
+                        <div className='col-sm-12 col-md-12 col-lg-4  '>
                             <Recent />
                         </div>
                     </div>
                 </div>
             </div>
-            <Banners/>
+            <Banners />
             <Footer />
         </>
     )

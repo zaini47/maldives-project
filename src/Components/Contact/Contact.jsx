@@ -17,37 +17,37 @@ function Contact() {
         locat='Home / Contact Us'
         image={Contactimg}
       />
-      <div className="container main">
-          <div className="row pe-5">
-            <div className="col-sm-12 col-md-3 text-center">
-              <div className="contact-ico">
-                <i class="fa-solid fa-phone"></i>
-                <p className="fs-34 p-0 m-0">Phone</p>
-                <p className="fsc-16 mb-3">+1 (909) 280-0809</p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center">
-              <div className="contact-ico">
-                <i class="fa-solid fa-location-dot"></i>
-                <p className="fs-34 p-0 m-0">Address</p>
-                <p className="fsc-16 mb-3">Iris Watson, 283 Fusce Rd,NY</p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center">
-              <div className="contact-ico">
-                <i class="fa-solid fa-clock"></i>
-                <p className="fs-34 p-0 m-0">Open Time</p>
-                <p className="fsc-16 mb-3">10:00 am to 23:00 pm</p>
-              </div>
-            </div>
-            <div className="col-sm-12 col-md-3 text-center">
-              <div className="contact-ico">
-                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-                <p className="fs-34 p-0 m-0"> Email</p>
-                <p className="fsc-16 mb-3">supportvirtuenetz@gmail.com</p>
-              </div>
+      <div className="row main">
+        <div className="row pe-5 pt-3">
+          <div className="col-sm-12 col-md-6 col-lg-3 text-center">
+            <div className="contact-ico">
+              <i class="fa-solid fa-phone"></i>
+              <p className="fs-34 fw-500 p-0 m-0">Phone</p>
+              <p className="fsc-16 fw-400 mb-3">+1 (909) 280-0809</p>
             </div>
           </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 text-center">
+            <div className="contact-ico">
+              <i class="fa-solid fa-location-dot"></i>
+              <p className="fs-34 fw-500 p-0 m-0">Address</p>
+              <p className="fsc-16 fw-400 mb-3">Iris Watson, 283 Fusce Rd,NY</p>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 text-center">
+            <div className="contact-ico">
+              <i class="fa-solid fa-clock"></i>
+              <p className="fs-34 fw-500 p-0 m-0">Open Time</p>
+              <p className="fsc-16 fw-400 mb-3">10:00 am to 23:00 pm</p>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-6 col-lg-3 text-center">
+            <div className="contact-ico">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              <p className="fs-34 fw-500 p-0 m-0"> Email</p>
+              <p className="fsc-16 fw-400 mb-3">supportvirtuenetz@gmail.com</p>
+            </div>
+          </div>
+        </div>
 
         <div className="row">
           <div className="col-12 m-auto mt-3 px-5">
@@ -66,37 +66,39 @@ function Contact() {
       </div>
       <div className="container">
         <div className="row text-center">
-          <p className='fs-26'>CONTACT US</p>
-          <p className='fs-52'>Leave Message</p>
+          <p className='fs-26 fw-500'>CONTACT US</p>
+          <p className='fs-52 fw-500'>Leave Message</p>
           <div className="col-sm-12 col-md-6">
             <InputFeilds
+              labelclass="fw-500"
               placeholder="Your Name"
-              inputStyle="contactinput1"
+              inputStyle="contactinput1 fw-400 mb-4"
             />
           </div>
           <div className="col-sm-12 col-md-6">
             <InputFeilds
-            type="email"
+              labelclass="fw-500"
+              type="email"
               placeholder="Your Email"
-              inputStyle="contactinput1"
+              inputStyle="contactinput1 fw-400 mb-4"
             />
           </div>
           <div className="col-sm-12">
             <textarea
               placeholder="Your Message"
-              className="contactinput2"
+              className="contactinput2 fw-400 mb-4"
             />
           </div>
           <div className="col-sm-12 d-flex justify-content-center align-items-center my-5">
-          <Button
-          name="Send Message"
-          batn="contactBtn"
-          />
+            <Button
+              name="Send Message"
+              batn="contactBtn fw-500"
+            />
           </div>
         </div>
 
       </div >
-      <Banners/>
+      <Banners />
       <Footer />
     </>
   )

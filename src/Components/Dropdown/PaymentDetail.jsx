@@ -71,7 +71,7 @@ function PaymentDetail() {
                                             <input
                                                 type="text" className="payment w-100 py-16" />
                                         </div>
-                                        <div className='col-1'>
+                                        <div className='col-1 p-0 m-0'>
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
                                                 <path d="M8 16.4998L13.3333 21.8332L24 11.1665" stroke="#1CC3B2" stroke-width="2.66667" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>

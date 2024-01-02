@@ -7,8 +7,8 @@ import "../Navbar/Navbar.css"
 const Navbar = (props) => {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg bg-light ${props.class} px-5 align-items-md-center`}>
-        <div className="container-fluid">
+      <nav className={`navbar navbar-expand-lg bg-light ${props.class}  align-items-md-center`}>
+        <div className="container">
           <div className="navlogo">
             <NavLink className="navbar-brand" to="/">
               <p >
@@ -40,11 +40,11 @@ const Navbar = (props) => {
                 <li className="nav-item">
                   <NavLink className={`nav-link ${props.lists}`} to="/Contact">CONTACT</NavLink>
                 </li>
+                <div className="box">
 
                 <li className='nav-item'>
                   <Dropdown />
                 </li>
-                <div className="box">
                   <button className="botn " type="submit">BOOK NOW</button>
                 </div>
               </ul>

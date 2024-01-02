@@ -9,45 +9,46 @@ function Login() {
         <>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-sm-12 col-md-6 bg-img py-5 px-5">
-                        <p className='Setlogo text-white py-2'><span className='logo'>Mal</span><span className='fnt-set7'>d</span>ives</p>
+                    <div className="col-sm-12 col-md-12 col-lg-6 bg-img py-5 px-5">
+                        <p className='Setlogo text-white py-2 fw-500'><span className='logo fw-400'>Mal</span><span className='fnt-set7 fw-400'>d</span>ives</p>
                         <div className="text py-5 my-4 text-start">
-                            <p className='text-white fnt-set1 pt-5'>Welcome to Maldives</p>
-                            <p className='text-white fnt-set2 pb-5'>Lorem ipsum dolor sit amet, consectetur adipiscing<br />elit. Vulputate ut laoreet velit ma.</p>
-
+                            <p className='text-white fnt-set1 pt-5 fw-700'>Welcome to Maldives</p>
+                            <p className='text-white fnt-set2 pb-5 fw-500'>Lorem ipsum dolor sit amet, consectetur adipiscing<br />elit. Vulputate ut laoreet velit ma.</p>
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-6">
-                        <div className="text-start login-box py-5">
-                            <p className='fnt-set3 text-dark'>Welcome back!</p>
-                            <p className='fnt-set4'>Meet the good taste today</p>
+                    <div className="col-sm-12 col-md-12 col-lg-6">
+                        <div className="text-start login-box pt-5">
+                            <p className='fnt-set3 fw-600 text-dark'>Welcome back!</p>
+                            <p className='fnt-set4 fw-400 mb-5'>Meet the good taste today</p>
                             <form>
                                 <InputFields
+                                    labelclass="fw-500"
                                     name="E-mail or phone number"
                                     type="email"
                                     placeholder="Type your e-mail or phone number"
-                                    inputStyle='inputStyle'
+                                    inputStyle='inputStyle fw-400 mb-5'
                                 />
                                 <InputFields
+                                    labelclass="fw-500"
                                     name="Password"
                                     type="password"
                                     placeholder="Type your password"
-                                    inputStyle='inputStyle'
+                                    inputStyle='inputStyle fw-400 mb-4'
                                 />
-                                <p className='text-end hotel-primary'> <Link to="/forgot-password">Forgot Password?</Link></p>
+                                <p className='text-end hotel-primary fs-14 fw-400 ff-inter'> <Link to="/forgot-password">Forgot Password?</Link></p>
                                 <div className='py-3 text-white'>
-                                <Button
-                                batn="batn"
-                                type="submit"
-                                    name="Sign Up"
-                                />
+                                    <Button
+                                        batn="batn fw-700"
+                                        type="submit"
+                                        name="Sign In"
+                                    />
                                 </div>
                                 <div className="center-line-text-container">
                                     <div className="center-line"></div>
-                                    <p className="centered-text py-3">or do it via other accounts</p>
+                                    <p className="centered-text py-3 px-3 fw-500 m-0">or do it via other accounts</p>
                                 </div>
                             </form>
-                            <div className="ico d-flex">
+                            <div className="ico d-flex p-0 m-0">
                                 <div className="google"> <Link to="https://www.google.com/" target='_blank'>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78" fill="none">
                                         <g filter="url(#filter0_dd_1_1665)">
@@ -119,8 +120,8 @@ function Login() {
                                     </defs>
                                 </svg></Link></div>
                             </div>
-                            <div className='text-center py-4'>
-                                <p className='fnt-set6'>Don’t have an account? <Link to="/Signup">Sign Up</Link></p></div>
+                            <div className='text-center pt-4'>
+                                <p className='fnt-set6 fw-500 '>Don’t have an account? <Link to="/Signup" className='fw-600 ff-inter'>Sign Up</Link></p></div>
                         </div>
                     </div>
                 </div>

@@ -68,16 +68,16 @@ function Testominal() {
                                     <img src={testimonial.image} alt="" className="img-fluid" />
                                 </div>
                                 <div className="col-sm-12 col-md-6">
-                                    <div className="py-3">
+                                    <div className="py-3 test-pad-y">
                                         <p className="text-prim fs-16 ff-p fw-500 ls">{testimonial.title}</p>
                                     </div>
                                     <div>
                                         <p className="fs-42 fw-500 ff-p text-d">{testimonial.subTitle}</p>
                                     </div>
-                                    <div className="py-3">
+                                    <div className="py-3 test-pad-y">
                                         <p className="fs-18 fw-400 text--light ff-p text-justify">{testimonial.content}</p>
                                     </div>
-                                    <div className="py-3">
+                                    <div className="py-3 test-pad-y">
                                         <img src={star} alt="" />
                                     </div>
                                     <div>

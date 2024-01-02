@@ -16,11 +16,11 @@
 }
 .main {
   background-color: #fff;
-  width: 1506px;
   padding: 34px 10px;
+  width: 85%;
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 59.5%;
   transform: translate(-60%, -15%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 4px;
@@ -35,17 +35,17 @@
   color: var(--text-light);
 }
 .fs-52 {
-  font-size: 52px !important;
+  font-size: 52px;
   font-family: "Work Sans", sans-serif;
   color: var(--text-dark);
 }
 .fs-26 {
-  font-size: 26px !important;
+  font-size: 26px;
   font-family: "Work Sans", sans-serif;
   color: var(--primary-color);
 }
 .contactinput1 {
-  width: 550px;
+  width: 100%;
   height: 45px;
 }
 .contactinput2 {
@@ -87,26 +87,34 @@
   text-align: center;
 }
 .slick-dots li.slick-active button:before {
-  opacity: .75;
+  opacity: 0.75;
   color: var(--primary-color);
   font-size: 16px;
 }
 .slick-dots li button:before {
-  font-family: 'slick';
+  font-family: "slick";
   line-height: 20px;
   position: absolute;
   top: 0;
   left: 0;
   font-size: 16px;
-  content: '•';
+  content: "•";
   text-align: center;
-  opacity: .25;
+  opacity: 0.25;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li button:hover{
+.slick-dots li button:hover {
   outline: none;
   opacity: 0.3;
-  color: var(--Hotel-Grey, #636A76);
+  color: var(--Hotel-Grey, #636a76);
+}
+@media only screen and (min-width: 1440px) and (max-width: 2000px)  {
+  .main{
+    height: 848px;
+  }
+  iframe{
+    height: 600px !important;
+  }
 }

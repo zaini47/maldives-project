@@ -1,26 +1,44 @@
 :root {
-    --primary-color: #1cc3b2;
-    --Dm: "DM Sans", sans-serif;
-    --inter: "Inter", sans-serif;
-    --text-dark: #2a303b;
-    --text-mid-light: #1cc3b2;
-    --text-light: #636a76;
-    --logout-color: #f62f2f;
-    --Hotel-Grey: #636A76;
-  }
+  --primary-color: #1cc3b2;
+  --Dm: "DM Sans", sans-serif;
+  --inter: "Inter", sans-serif;
+  --text-dark: #2a303b;
+  --text-mid-light: #1cc3b2;
+  --text-light: #636a76;
+  --logout-color: #f62f2f;
+  --Hotel-Grey: #636a76;
+}
 
-.profile:active{
-    color: var(--Hotel-Primary);
+.profile:active {
+  color: var(--Hotel-Primary);
 }
-.Hotel-Grey{
-    color: var(--Hotel-Grey);
+.Hotel-Grey {
+  color: var(--Hotel-Grey);
 }
-.primary-color{
-    color: var(--primary-color);
+.primary-color {
+  color: var(--primary-color);
 }
-.custom_svg{
-    width: 16px;
+.custom_svg {
+  width: 16px;
   height: 19.556px;
   flex-shrink: 0;
   color: var(--Hotel-Grey);
+}
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .batn_verify {
+    top: 40%;
+    left: 50%;
   }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .batn_verify {
+    top: 28%;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2000px) {
+  .batn_verify {
+    top: 27%;
+    left: 60%;
+  }
+}

@@ -6,7 +6,7 @@ const LimitDropdown = () => {
 
   return (
     <div className='limitDropdown'>
-      <select name="number" id="num" >
+      <select name="number" className='px-2' id="num" >
         <option value="01">01</option>
         <option value="02">02</option>
         <option value="03">03</option>

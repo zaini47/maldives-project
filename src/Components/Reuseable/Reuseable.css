@@ -10,6 +10,12 @@
   --logout-color: #f62f2f;
   --bg-light: rgba(14, 39, 55, 0.06);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .red-color {
   color: var(--logout-color) !important;
 }
@@ -59,6 +65,9 @@
 }
 .fs-42 {
   font-size: 42px !important;
+}
+.fs-52 {
+  font-size: 52px !important;
 }
 
 .ff-dm {
@@ -211,7 +220,7 @@
   transform: translate(-50%, -50%);
 }
 .fnt-set10 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Playfair Display" !important;
   font-size: 68px;
 }
 .fnt-set11 {
@@ -239,7 +248,7 @@
 }
 .CheckBox1 {
   left: 50%;
-  width: 80%;
+  width: 90%;
   position: relative;
   top: 80%;
   border-radius: 6px;
@@ -247,6 +256,7 @@
   background-color: #fff;
   transform: translate(-62%, -130%);
 }
+
 .searchBox1 {
   border: 1px solid #ccc;
   padding: 20px;
@@ -257,12 +267,10 @@
 .checkIn,
 .checkOut {
   margin-bottom: 8px;
-  width: 22%;
 }
 .rooms,
 .adult,
 .child {
-  width: 8%;
   margin-bottom: 8px;
 }
 .btn {
@@ -315,7 +323,6 @@ input {
   background-color: #1cc3b2;
   color: white;
   border-radius: 6px;
-  display: inline-flex;
   padding: 9px 70px !important;
   border: none;
   font-size: 16px;
@@ -370,11 +377,7 @@ a .play-button {
     rgba(77, 73, 73, 0.75) 0px -12px 30px, rgba(77, 73, 73, 0.75) 0px 4px 6px,
     rgba(77, 73, 73, 0.75) 0px 12px 13px, rgba(77, 73, 73, 0.75) 0px -3px 5px;
 }
-/* .play-button:hover {
-  color: #1cc3b2 !important;
-  background-color: white !important;
-  border: 1px solid #1cc3b2;
-} */
+
 .play-button a:hover {
   color: var(--hotel-primary) !important;
 }
@@ -391,7 +394,7 @@ a .play-button {
   border-radius: 8px;
   background: #edf2f7;
   box-sizing: border-box;
-  padding: 10px 66.667px 10px 21.333px;
+  padding: 18px 66.667px 21.333px 21.333px;
   color: #636a76;
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Inter", serif;
@@ -413,11 +416,6 @@ button.slick-arrow.slick-next {
 button.slick-arrow.slick-prev {
   display: none !important;
 }
-/* 
-.slick-track {
-  width: 100% !important;
-} */
-
 .bg-img3 {
   background-image: url(../../Assets/Images/div.room-content.png);
 }
@@ -521,7 +519,7 @@ input[type="date" i] {
 .f-input {
   display: flex;
   flex-direction: row;
-  width: 348px;
+  width: 100%;
   height: 51px;
   justify-content: flex-end;
 }
@@ -650,7 +648,7 @@ input[type="date" i] {
   padding: 30px;
   box-shadow: 0px 7px 25px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
-  width: 261px;
+  width: 100%;
 }
 .aside_1 {
   display: flex;
@@ -753,4 +751,583 @@ input[type="date" i] {
   width: 98.667px;
   height: 26px;
   text-align: center;
+}
+
+.overlay-text {
+  background: rgba(42, 48, 59, 0.65);
+  color: #fff;
+  position: relative;
+  padding: 11px 12px;
+  top: 79.5%;
+}
+
+.overlay-text:hover {
+  top: 73.5% !important;
+  cursor: pointer;
+  .exp-btn {
+    display: block;
+  }
+}
+.exp-btn {
+  color: #fff !important;
+  font-size: 17px;
+  display: none;
+}
+
+.rounded-190 {
+  border-radius: 190px;
+}
+
+.slick-dots {
+  width: 15% !important;
+}
+
+.card-bg {
+  border-radius: 6px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.latest-button {
+  border-radius: 3px;
+  border: 0.5px solid var(--Hotel-Grey, #636a76);
+  background-color: transparent;
+  padding: 2px 16px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  nav {
+    padding: 0;
+  }
+
+  .fnt-set10 {
+    font-size: 24px;
+  }
+
+  .fnt-set11 {
+    font-size: 16px;
+  }
+
+  .frm {
+    flex-direction: column;
+  }
+
+  .CheckBox1 {
+    top: 75%;
+    transform: translate(-62%, 6%) !important;
+  }
+
+  .menu .navbar-nav {
+    padding: 10px 0;
+  }
+
+  .botn {
+    display: none !important;
+  }
+  br {
+    display: none;
+  }
+  .fs-42 {
+    font-size: 35px !important;
+  }
+
+  .fs-20 {
+    font-size: 17px;
+  }
+  .fs-22 {
+    font-size: 17px;
+  }
+  .fs-18 {
+    font-size: 16px;
+  }
+  .fs-38 {
+    font-size: 28px;
+  }
+
+  .fs-58 {
+    font-size: 35px;
+  }
+  .text--set {
+    line-height: 36px;
+  }
+  .services {
+    gap: 30px;
+  }
+  .slider {
+    flex-direction: column;
+  }
+  .buton-grup {
+    transform: translate(-34%, -1030%);
+  }
+  .slide-context {
+    padding: 20px 0;
+  }
+
+  .vector-photo svg {
+    left: 35%;
+    top: 45%;
+  }
+
+  .slick-dots {
+    bottom: 10px !important;
+    width: 91% !important;
+  }
+  .latestpost-sm {
+    flex-direction: column !important;
+  }
+
+  .fnt-set13 {
+    font-size: 35px !important;
+  }
+  .fnt-set14 {
+    font-size: 16px;
+    margin: 0px !important;
+  }
+
+  a .play-button {
+    font-size: 18px !important;
+  }
+
+  .fs-52 {
+    font-size: 36px !important;
+  }
+
+  .slider1 .slide-track1 {
+    width: calc(215px * 7) !important;
+  }
+
+  .tx-1 {
+    width: 70%;
+  }
+
+  .fnt-set15 {
+    font-size: 17px !important;
+    margin: 0 !important;
+  }
+
+  .fnt-set16 {
+    font-size: 10px !important;
+  }
+
+  .btn4 {
+    padding: 10px !important;
+    font-size: 7px !important;
+  }
+  .banner .text {
+    width: 95% !important;
+  }
+
+  .pad-b-sm {
+    padding-bottom: 1.5rem !important;
+  }
+
+  .f-input {
+    max-width: 100%;
+  }
+
+  /* ///////////////////////////////////////////blogg/////////////////////////////////////////// */
+
+  .pad-sm {
+    padding: 0 !important;
+  }
+
+  .w-sm {
+    width: 100% !important;
+  }
+
+  .m-sm {
+    margin: 0 !important;
+  }
+
+  .fs-28 {
+    font-size: 22px;
+  }
+  .fs-24 {
+    font-size: 20px;
+  }
+
+  .fs-32 {
+    font-size: 28px !important;
+  }
+
+  .fs-20 {
+    font-size: 16px;
+  }
+
+  .width {
+    width: 50%;
+  }
+  .set1 {
+    width: 100% !important;
+  }
+  .btn {
+    width: 75% !important;
+  }
+  .f-s-column {
+    flex-direction: column !important;
+  }
+
+  .pay-title {
+    font-size: 40px !important;
+  }
+
+  .fs-34 {
+    font-size: 28px !important;
+  }
+
+  .thanks-forward {
+    padding: 25.699px 32.548px !important;
+  }
+  .fs-62 {
+    font-size: 41px !important;
+  }
+
+  .fs-36 {
+    font-size: 29px !important;
+  }
+  .fnt-set13 {
+    font-size: 27px !important;
+  }
+
+  /* /////////////////////////////////////////////////////////////// */
+  /* / ///////////////// / */
+  /* / Contact us / */
+  .main {
+    width: 100% !important;
+    left: 62.5% !important;
+    transform: translate(-60%, 0%) !important;
+    margin-bottom: 10px !important;
+  }
+  .contactinput1 {
+    width: 100% !important;
+  }
+  .main .pe-5 {
+    padding-right: 0px !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Personal infoo / */
+  .custom_profile {
+    width: 100% !important;
+    margin-bottom: 25px;
+  }
+  .batn_verify {
+    display: none !important;
+  }
+  .batn_update {
+    width: 100% !important;
+  }
+  .batn_clear {
+    width: 100% !important;
+  }
+  .Style_input {
+    font-size: 16px !important;
+  }
+  /* / ////////////////////////// / */
+  /* / LoginSecurity / */
+  .m-s-set {
+    margin-left: 0% !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Booking / */
+  .set-fc {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .set-gap {
+    gap: 10px;
+  }
+  /* / ////////////////////////// / */
+  /* / Payment / */
+  .display-sm-none {
+    display: none !important;
+  }
+  .border-r {
+    border: none !important;
+  }
+  .set-w {
+    width: 100% !important;
+  }
+
+  /* / /////////////////////////////////// /
+/ Footer / */
+  .border--top {
+    width: 100% !important;
+  }
+
+  /* / /////////////////////////////////// /
+/ Drop down  / */
+  .profile-dropdown .dropdown-content {
+    transform: translate(100px, 0px) !important;
+    right: 0% !important;
+  }
+}
+
+/* MEDIA QUERYYYYYY 768 TO 1023 */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .CheckBox1 {
+    transform: translate(-62%, -107%) !important;
+    left: 56% !important;
+    width: 90% !important;
+  }
+
+  .fnt-set13 {
+    font-size: 41px !important;
+  }
+  .set-lg-w {
+    width: 29% !important;
+  }
+
+  .botn {
+    display: none !important;
+  }
+
+  .CheckBox1 {
+    top: 75%;
+    transform: translate(-62%, 6%) !important;
+  }
+  .CheckBox2 {
+    top: 75%;
+    transform: translate(-62%, 6%) !important;
+  }
+  .buttn {
+    padding: 9px 28px !important;
+    font-size: 16px !important;
+    border: 1px solid #1cc3b2;
+  }
+  .buttn:hover {
+    padding: 9px 28px !important;
+    font-size: 16px !important;
+  }
+  .f-input {
+    max-width: 100% !important;
+  }
+  .h--vh {
+    height: 95vh !important;
+  }
+  .buton-grup {
+    left: 32% !important;
+  }
+  .fnt-set15 {
+    font-size: 30px !important;
+  }
+  .fnt-set16 {
+    font-size: 13px !important;
+  }
+  .fs-18 {
+    font-size: 13px !important;
+  }
+  .fs-42 {
+    font-size: 32px !important;
+  }
+  .fs-58 {
+    font-size: 40px !important;
+  }
+  .pad-e-set {
+    padding-right: 0px !important;
+  }
+  .services {
+    gap: 30px !important;
+  }
+  .slick-dots {
+    left: 50% !important;
+    top: 85% !important;
+  }
+  .test-pad-y {
+    padding: 0px !important;
+  }
+  .custom_width_card {
+    width: 31% !important;
+  }
+  .row_ft_style {
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .pad-b-sm {
+    padding-bottom: 0.25rem !important;
+  }
+  .btn4 {
+    padding: 10px 28.61px 11px 28.61px !important;
+  }
+
+  .pad-sm {
+    padding: 0 !important;
+  }
+
+  .f-m-column {
+    flex-direction: column !important;
+  }
+
+  .set1 {
+    width: 100% !important;
+  }
+
+  .w-md {
+    width: 100% !important;
+  }
+
+  /* / ///////////////////////////// / */
+  /* / Contact us / */
+  .contactinput1 {
+    width: 100% !important;
+  }
+  .main {
+    left: 60% !important;
+    width: 90% !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Personal infoo / */
+  .custom_profile {
+    width: 100%;
+    margin-bottom: 25px !important;
+  }
+  .batn_verify {
+    left: 50% !important;
+  }
+  .batn_update {
+    width: 90% !important;
+  }
+  .batn_clear {
+    width: 90% !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Navbar / */
+  .box {
+    display: none;
+  }
+  /* / ////////////////////////// / */
+  /* / LoginSecurity / */
+  .g-set {
+    gap: 0 !important;
+  }
+  .m-s-set {
+    margin-left: 0 !important;
+  }
+  .set-m-p-0 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Booking / */
+  .set-fc {
+    flex-direction: column !important;
+    align-items: start !important;
+  }
+  /* / ////////////////////////// / */
+  /* / Payment / */
+  .set-w {
+    width: 100% !important;
+  }
+}
+
+/* //////////////////////////// */
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .m-s-set {
+    margin-left: 0% !important;
+  }
+  .g-set {
+    gap: 0 !important;
+  }
+  .set-m-p-0 {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .buton-grup {
+    left: 36%;
+    top: 390%;
+}
+
+  .CheckBox1 {
+    left: 58%;
+    right: -16px;
+    width: 94%;
+    position: relative;
+    top: 80%;
+    border-radius: 6px;
+    margin: auto;
+    background-color: #fff;
+    transform: translate(-62%, -130%);
+  }
+  .vector-photo svg {
+    left: 45%;
+    top: 45%;
+  }
+
+  .slick-dots {
+    left: 47% !important;
+  }
+
+  .fs-18 {
+    font-size: 12px !important;
+  }
+  .custom_profile {
+    width: 100% !important;
+  }
+  .set-fcc {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+  .set-ww {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 2000px) {
+  .CheckBox1 {
+    left: 42%;
+    width: 68%;
+    position: relative;
+    top: 80%;
+    border-radius: 6px;
+    margin: auto;
+    background-color: #fff;
+    transform: translate(-62%, -130%);
+  }
+
+  .buttn{
+    padding: 8px 37px !important;
+  }
+  .vector-photo svg {
+    left: 56%;
+    top: 60%;
+  }
+  .slick-dots {
+    left: 47% !important;
+  }
+
+  .buton-grup {
+    left: 43%;
+  }
+
+  .p-xl {
+    padding-left: 60px !important;
+  }
+  .p-slick-xl {
+    padding-left: 60px !important;
+  }
+
+  .buton4 {
+    margin-left: 60px;
+  }
+
+  .pt-xl {
+    padding-top: 50px;
+  }
+
+  .video-container {
+    padding: 17.25% 0% !important;
+  }
+
+  .w-xl {
+    max-width: 1570px !important;
+  }
+
+  .fs-18 {
+    font-size: 18px !important;
+  }
 }

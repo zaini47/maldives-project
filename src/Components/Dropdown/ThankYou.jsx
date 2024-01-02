@@ -15,7 +15,7 @@ const ThankYou = () => {
     return (
         <>
             <Navbar
-                class="dark "
+                class="dark nav-light"
                 lists="text-white"
                 logow=" text-white"
             />
@@ -24,10 +24,10 @@ const ThankYou = () => {
             <div className="container-fluid">
                 <div className="container py-5">
                     <div className="row py-5">
-                        <div className="col-sm-12 col-md-5">
-                            <img src={thanks} className='img-fluid' alt="" />
+                        <div className="col-sm-12 col-md-12 col-lg-5">
+                            <img src={thanks} className='img-fluid w-sm w-md' alt="" />
                         </div>
-                        <div className="col-sm-12 col-md-7">
+                        <div className="col-sm-12 col-md-12 col-lg-7">
                             <div>
                                 <p className='fs-24 ff-inter fw-600 text-d'>BOOKING SUCCESSFUL</p>
                             </div>

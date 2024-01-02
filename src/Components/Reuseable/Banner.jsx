@@ -15,7 +15,7 @@ function Banner() {
         <div className="container">
           <div className="banner">
             <div className="imag">
-              <img src={BannerImg} alt="Banner" />
+              <img src={BannerImg} className='img-fluid' alt="Banner" />
             </div>
             <div className="text">
               <div className="tx-1">

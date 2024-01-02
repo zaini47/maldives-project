@@ -16,7 +16,7 @@ function Slicker() {
     contain: true,
     freeScroll: true,
     prevNextButtons: false,
-    // autoPlay: 1500,
+    autoPlay: 1500,
   }
 
   return (

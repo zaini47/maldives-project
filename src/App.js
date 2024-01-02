@@ -16,7 +16,6 @@ import Personalinfo from "./Components/Profile/Personalinfo";
 import MyPayment from "./Components/MyPayments/MyPayment";
 import LoginSecurity from "./Components/LoginSecurity/LoginSecurity/LoginSecurity";
 import MyBooking from "./Components/Booking/MyBooking";
-import Dummyroom from "./Components/Room/Dummyroom";
 
 
 function App() {
@@ -40,7 +39,6 @@ function App() {
         <Route path="/Profile/MyPayment" element={<MyPayment />} />
         <Route path="/Profile/Login&Security" element={<LoginSecurity />} />
         <Route path="/Profile/MyBookings" element={<MyBooking/>}/>
-        <Route path="/Dummyroom" element={<Dummyroom/>}/>
       </Routes>
     </>
   );

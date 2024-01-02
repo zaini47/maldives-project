@@ -2,7 +2,7 @@ import React from 'react';
 import '../Reuseable/Reuseable.css';
 function Button(props) {
   return (
-    <div>
+    <>
       <button
         className={props.batn}
         type={props.type}
@@ -11,7 +11,7 @@ function Button(props) {
         {props.iconClass && <i className={`me-3 ${props.iconClass}`}></i>}
         {props.name}
         {props.icons && <i className={props.icons}></i>} </button>
-    </div>
+    </>
   )
 }
 

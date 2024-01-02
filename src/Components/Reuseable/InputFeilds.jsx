@@ -4,7 +4,7 @@ function InputFields(props) {
   return (
     <>
       <div className='py-3'>
-        <label htmlFor="email" className={`fnt-set5 ${props.labelclass}`}>
+        <label htmlFor="email" className={`fnt-set5  ${props.labelclass}`}>
           {props.name}
         </label><br />
         <input

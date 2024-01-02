@@ -5,13 +5,10 @@ import '../About/About.css'
 import HomeAImg from "../../Assets/Images/home-about-section.png";
 import Video from '../Reuseable/Video';
 import Footer from '../Footer/Footer';
-import view1 from "../../Assets/Images/1.jpg";
-import view2 from "../../Assets/Images/2.png";
-import view3 from "../../Assets/Images/3.jpg";
-import view4 from "../../Assets/Images/4.jpg";
 import Aboutimg from "../../Assets/Images/bg-about.png"
 import Testominal from '../Reuseable/Testominal';
 import Banners from "../Reuseable/Banner";
+import { Link } from 'react-router-dom';
 
 function About() {
     return (
@@ -25,8 +22,8 @@ function About() {
             />
             <div className='container-fluid'>
                 <div className='container '>
-                    <div className="row pt-5">
-                        <div className="col-sm-12 col-md-6 ">
+                    <div className="row f-m-column pt-5">
+                        <div className="col-sm-12 col-md-12 col-lg-6 ">
                             <div><p className='fs-42 ff-p fw-500 text-d'>20 Years Of Experience</p></div>
 
                             <div>
@@ -49,8 +46,8 @@ function About() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-sm-12 col-md-6">
-                            <img src={HomeAImg} alt="" />
+                        <div className="col-sm-12 col-md-12 col-lg-6">
+                            <img src={HomeAImg} className='img-fluid w-md' alt="" />
                         </div>
                     </div>
                 </div>
@@ -60,28 +57,63 @@ function About() {
             {/* Testominal section  */}
             <Testominal />
             <div className="container-fluid">
-                <div className="textt">
-                    <p className='fnt-set18 text-center'>Our Top <br /> Services & Entertainment </p>
-                </div>
-                <div className="container-fluid">
-                    <div className="row d-flex justify-content-center py-5">
-                        <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
-                            <img src={view1} alt="" className="img-fluid " />
-                        </div>
-                        <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
-                            <img src={view2} alt="" className="img-fluid " />
-                        </div>
-                        <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
-                            <img src={view3} alt="" className="img-fluid " />
-                        </div>
-                        <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
-                            <img src={view4} alt="" className="img-fluid " />
+                <div className="row d-flex justify-content-center py-5">
+                    <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
+                        <div className="view1">
+                            <div className="overlay-text">
+                                <p className=" fs-16 ff-w py-1 m-0">
+                                    Entertaiment
+                                </p>
+                                <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                                <div className="view-btn">
+                                    <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
+                    <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
+                        <div className="view2">
+                            <div className="overlay-text">
+                                <p className=" fs-16 ff-w py-1 m-0">
+                                    Entertaiment
+                                </p>
+                                <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                                <div className="view-btn">
+                                    <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
+                        <div className="view3">
+                            <div className="overlay-text">
+                                <p className=" fs-16 ff-w py-1 m-0">
+                                    Entertaiment
+                                </p>
+                                <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                                <div className="view-btn">
+                                    <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-sm-12 col-md-3 m-0 p-0 o-h">
+                        <div className="view4">
+                            <div className="overlay-text">
+                                <p className=" fs-16 ff-w py-1 m-0">
+                                    Entertaiment
+                                </p>
+                                <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                                <div className="view-btn">
+                                    <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
             </div>
-            <Banners/>
+            <Banners />
             <Footer />
         </>
     )

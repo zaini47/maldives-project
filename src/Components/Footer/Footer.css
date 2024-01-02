@@ -45,7 +45,7 @@
 }
 .accordion-button:not(.collapsed) {
   color: #000000;
-  background-color:#fff !important; 
+  background-color: #fff !important;
   box-shadow: none !important;
 }
 .accordion-button:not(.collapsed)::after {
@@ -73,7 +73,7 @@
 }
 .inputStyle1 {
   outline: none;
-  background-color: var(--Hotel-Grey, #636A76);
+  background-color: var(--Hotel-Grey, #636a76);
   border: none;
   color: #fff !important;
 }
@@ -87,17 +87,16 @@
   position: absolute;
   z-index: 1;
   top: 50%;
-  width: 80%;
+  width: 95%;
   justify-content: space-between;
   display: flex;
-  margin: auto;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: start;
 }
 .btn4 {
   display: inline-flex;
-  padding: 5px 39.61px 5px 39.81px;
+  padding: 10px 28.61px 11px 28.61px;
   justify-content: center;
   align-items: center;
   background-color: var(--Hotel-Primary);
@@ -107,25 +106,25 @@
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
-.btn4:hover{
+.btn4:hover {
   color: var(--hotel-primary) !important;
-    background-color: white !important;
-    border: 1px solid #1cc3b2;
+  background-color: white !important;
+  border: 1px solid #1cc3b2;
 }
-.fnt-set15{
-  font-family: 'Work Sans', sans-serif;
+.fnt-set15 {
+  font-family: "Work Sans", sans-serif;
   font-size: 36px;
 }
-.fnt-set16{
-  font-family: 'Work Sans', sans-serif;
+.fnt-set16 {
+  font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
-svg{
+svg {
   font-size: 18px;
 }
-.pics img:hover{
+.pics img:hover {
   opacity: 0.68;
   cursor: pointer;
   transition: ease-in-out 500ms;
@@ -157,7 +156,8 @@ svg{
   position: relative;
   width: 960px;
 }
-.slider1::before, .slider1::after {
+.slider1::before,
+.slider1::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
@@ -176,7 +176,7 @@ svg{
 }
 .slider1 .slide-track1 {
   -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
   display: flex;
   width: calc(250px * 14);
 }
@@ -184,7 +184,7 @@ svg{
   height: 100px;
   width: 250px;
 }
-.social-ico a{
+.social-ico a {
   color: var(--Hotel-Grey) !important;
 }
 .social-ico a:hover {
@@ -192,11 +192,30 @@ svg{
 }
 .border--top {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 92.5%;
 }
-.animate:hover{
+.animate:hover {
   color: var(--Hotel-Primary) !important;
   letter-spacing: 1px;
 }
-.animatee:hover{
+.animatee:hover {
   color: var(--Hotel-Primary) !important;
+}
+
+@media only screen and (min-width: 1340px) and (max-width: 2000px) {
+  .banner {
+    justify-content: center !important;
+  }
+  .banner .text {
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 78%;
+    justify-content: space-between;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: start;
+  }
 }

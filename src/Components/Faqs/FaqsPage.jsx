@@ -45,84 +45,86 @@ function FaqsPage() {
         locat='Home / FAQs'
         image={Faqsimg}
       />
-      <div className="container">
-        <div className="row">
+      <div className="container-fluid">
+        <div className="container">
+          <div className="row">
 
-          {/* /////////////////////////////////////FIRST PORTION END//////////////////////////// */}
+            {/* /////////////////////////////////////FIRST PORTION END//////////////////////////// */}
 
-          <div className="text  m-auto text-center py-4">
-            <div>
-              <p className='fnt-set13 '>Frequently Asked Questions</p>
+            <div className="text  m-auto text-center py-4">
+              <div>
+                <p className='fnt-set13 '>Frequently Asked Questions</p>
+              </div>
+              <p className='fnt-set24'>Room Sea View</p>
             </div>
-            <p className='fnt-set24'>Room Sea View</p>
+
+            {
+              seaview.map((item) => {
+                return (
+                  <Faqs
+                    question={item.question}
+                    item={item.id}
+                  />
+                )
+              })
+            }
+
+
+            {/* //////////////////////////////////SECOND  Royal Room/////////////////////////// */}
+
+            <div className='py-4 text-center'>
+              <p className='fnt-set24'>Room Sea View</p>
+            </div>
+
+            {
+              royalroom.map((item) => {
+                return (
+                  <Faqs
+                    question={item.question}
+                    item={item.id}
+                  />
+                )
+              })
+            }
+
+            {/* //////////////////////////////////THIRD  Royal Room/////////////////////////// */}
+
+            <div className='py-4 text-center'>
+              <p className='fnt-set24'>Premium King Room</p>
+            </div>
+
+
+            {
+              kingroom.map((item) => {
+                return (
+                  <Faqs
+                    question={item.question}
+                    item={item.id}
+                  />
+                )
+              })
+            }
+
+            {/* //////////////////////////////////FOURTH  Royal Room/////////////////////////// */}
+
+
+            <div className='py-4 text-center'>
+              <p className='fnt-set24'>Vip Room</p>
+            </div>
+            {
+              viproom.map((item) => {
+                return (
+                  <Faqs
+                    question={item.question}
+                    item={item.id}
+                  />
+                )
+              })
+            }
           </div>
-
-          {
-            seaview.map((item) => {
-              return (
-                <Faqs
-                  question={item.question}
-                  item={item.id}
-                />
-              )
-            })
-          }
-
-
-          {/* //////////////////////////////////SECOND  Royal Room/////////////////////////// */}
-
-          <div className='py-4 text-center'>
-            <p className='fnt-set24'>Room Sea View</p>
-          </div>
-
-          {
-            royalroom.map((item) => {
-              return (
-                <Faqs
-                  question={item.question}
-                  item={item.id}
-                />
-              )
-            })
-          }
-
-          {/* //////////////////////////////////THIRD  Royal Room/////////////////////////// */}
-
-          <div className='py-4 text-center'>
-            <p className='fnt-set24'>Premium King Room</p>
-          </div>
-
-
-          {
-            kingroom.map((item) => {
-              return (
-                <Faqs
-                  question={item.question}
-                  item={item.id}
-                />
-              )
-            })
-          }
-          
-          {/* //////////////////////////////////FOURTH  Royal Room/////////////////////////// */}
-
-
-          <div className='py-4 text-center'>
-            <p className='fnt-set24'>Vip Room</p>
-          </div>
-          {
-            viproom.map((item) => {
-              return (
-                <Faqs
-                  question={item.question}
-                  item={item.id}
-                />
-              )
-            })
-          }
         </div>
       </div>
-      <Banners/>
+      <Banners />
       <Footer />
     </>
   )

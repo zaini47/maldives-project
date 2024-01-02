@@ -22,61 +22,65 @@ const SearchForm = (props) => {
 
     return (
         <>
-        <div className={props.CheckBox}>
+            <div className={props.CheckBox}>
                 <div className="searchBox1">
-                    <form className='frm'>
-                        <div className="checkIn">
-                            <label>
-                                Check In:
-                            </label>
-                            <input
-                                type="date"
-                                name="checkIn"
-                                value={formData.checkIn}
-                                onChange={handleChange}
-                                required
-                            />
+                    <form className=' row justify-content-evenly  p-3  align-items-center'>
+                        <div className=' d-flex justify-content-evenly f-s-column f-m-column gap-4 col-md-12 col-lg-5 col-sm-12   '>
+                            <div className="checkIn  col-md-12 col-lg-6 col-sm-12 ">
+                                <label>
+                                    Check In:
+                                </label>
+                                <input
+                                    type="date"
+                                    name="checkIn"
+                                    value={formData.checkIn}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+                            <div className="checkOut  col-md-12 col-lg-6 col-sm-12 ">
+                                <label>
+                                    Check Out:
+                                </label>
+                                <input
+                                    type="date"
+                                    name="checkOut "
+                                    value={formData.checkOut}
+                                    onChange={handleChange}
+                                    required
+                                    className="inputdate"
+                                />
+                            </div>
                         </div>
-                        <div className="checkOut">
-                            <label>
-                                Check Out:
-                            </label>
-                            <input
-                                type="date"
-                                name="checkOut"
-                                value={formData.checkOut}
-                                onChange={handleChange}
-                                required
-                                 className="inputdate"
-                            />
-                        </div>
+                        <div className=' d-flex justify-content-center gap-4 p-0 m-0  col-md-12 col-lg-3 col-xl-2 col-sm-12'>
                             <div className="rooms">
                                 <label>
                                     Rooms:
                                 </label>
-                                <LimitDropdown/>
+                                <LimitDropdown />
                             </div>
                             <div className="adult">
                                 <label>
                                     Adults:
                                 </label>
-                                <LimitDropdown/>
+                                <LimitDropdown />
                             </div>
                             <div className="child">
                                 <label>
                                     Children:
                                 </label>
-                                <LimitDropdown/>
+                                <LimitDropdown />
                             </div>
-                            <div className="btn">
-                                <Button
-                                batn="buttn"
-                                    name="Check In"
-                                />
-                            </div>
+                        </div>
+                        <div className="btn col-md-12 col-lg-4 col-sm-12 p-0">
+                            <Button
+                                batn="buttn w-100 text-center"
+                                name="Check Availiability"
+                            />
+                        </div>
                     </form>
                 </div>
-                </div>
+            </div>
         </>
     );
 };

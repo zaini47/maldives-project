@@ -7,10 +7,10 @@
 :root {
   --hotel-primary: #1cc3b2;
   --hotel-grey: #636a76;
-  --text-dark :  #2A303B;
+  --text-dark: #2a303b;
 }
-.text-dar{
-    color: var(--text-dark) !important;
+.text-dar {
+  color: var(--text-dark) !important;
 }
 .hotel-primary {
   color: var(--hotel-primary);
@@ -28,19 +28,18 @@
   font-size: 38px;
 }
 .bg-img2 {
-  background: 
-  linear-gradient(
+  background: linear-gradient(
       0deg,
       rgba(34, 72, 93, 0.4) 0%,
       rgba(34, 72, 93, 0.4) 100%
     ),
     url(../Images/sidenav-bg.png), lightgray 50% / cover no-repeat;
   border-radius: 0px 50px 50px 0px;
-  box-shadow: 0px 0px 54px 5px rgba(20, 20, 20, 0.10);
+  box-shadow: 0px 0px 54px 5px rgba(20, 20, 20, 0.1);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 167vh;
+  height: 100vh;
 }
 .fnt-set1 {
   font-family: "DM Sans", serif;
@@ -48,7 +47,7 @@
 }
 .fnt-set2 {
   font-family: "Inter", serif;
-  font-size: 20px;
+  font-size: 24px;
 }
 .fnt-set3 {
   font-family: "Inter", serif;
@@ -75,10 +74,10 @@
   font-size: 38px;
 }
 .fnt-set8 {
-    font-size: 16px;
-    font-family: "Inter", serif;
-    color: #636a76;
-  }
+  font-size: 16px;
+  font-family: "Inter", serif;
+  color: #636a76;
+}
 .login-box {
   width: 70%;
   margin: auto;
@@ -89,12 +88,12 @@
 a {
   text-decoration: none !important;
 }
-.fw-700{
-    font-weight: 700;
-  }
-.fw-400{
-    font-weight: 400;
-  }
+.fw-700 {
+  font-weight: 700;
+}
+.fw-400 {
+  font-weight: 400;
+}
 .center-line-text-container {
   position: relative;
   text-align: center;
@@ -119,8 +118,222 @@ a {
 }
 .ico {
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 42.667px;
 }
-.w-95{
-    width: 95%;
+.w-95 {
+  width: 95%;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .fnt-set1 {
+    font-size: 35px !important;
   }
+  .fnt-set2 {
+    font-size: 16px !important;
+  }
+  .fnt-set3 {
+    font-size: 28px !important;
+  }
+  .fnt-set4 {
+    font-size: 16px !important;
+  }
+  .fnt-set6 {
+    font-size: 16px !important;
+  }
+  .bg-img2 {
+    height: 100vh !important;
+  }
+  .inputStyle {
+    font-size: 16px !important;
+  }
+  .batn {
+    font-size: 18px !important;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,700&family=Inter:wght@500&family=Poppins&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,700;1,600&family=Tapestry&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --hotel-primary: #1cc3b2;
+  --hotel-grey: #636a76;
+  --text-dark: #2a303b;
+}
+.text-dar {
+  color: var(--text-dark) !important;
+}
+.hotel-primary {
+  color: var(--hotel-primary);
+}
+.hotel-grey {
+  color: var(--hotel-grey);
+}
+.logo {
+  color: var(--hotel-primary);
+  font-family: "Tapestry", serif !important;
+  font-size: 58px;
+}
+.Setlogo {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+}
+.bg-img2 {
+  background: linear-gradient(
+      0deg,
+      rgba(34, 72, 93, 0.4) 0%,
+      rgba(34, 72, 93, 0.4) 100%
+    ),
+    lightgray 50% / cover no-repeat;
+  background-image: url(../Images/sidenav-bg.png);
+  border-radius: 0px 50px 50px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.fnt-set1 {
+  font-family: "DM Sans", serif;
+  font-size: 60px;
+}
+.fnt-set2 {
+  font-family: "Inter", serif;
+  font-size: 24px;
+}
+.fnt-set3 {
+  font-family: "Inter", serif;
+  font-size: 36px;
+}
+.fnt-set4 {
+  font-family: "Inter", serif;
+  font-feature-settings: "salt";
+  font-size: 20px;
+  color: var(--hotel-primary);
+}
+.fnt-set5 {
+  font-size: 18.667px;
+  font-family: "Inter", serif;
+  font-feature-settings: "clig" off, "liga" off;
+}
+.fnt-set6 {
+  font-size: 18.667px;
+  font-family: "Inter", serif;
+  font-feature-settings: "clig" off, "liga" off;
+}
+.fnt-set7 {
+  font-family: "Poppins", sans-serif;
+  font-size: 38px;
+}
+.fnt-set8 {
+  font-size: 16px;
+  font-family: "Inter", serif;
+  color: #636a76;
+}
+.login-box {
+  width: 70%;
+  margin: auto;
+}
+.login-box p a {
+  color: var(--hotel-primary);
+}
+a {
+  text-decoration: none !important;
+}
+.fw-700 {
+  font-weight: 700;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.center-line-text-container {
+  position: relative;
+  text-align: center;
+}
+
+.center-line {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #636a76;
+}
+.centered-text {
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  color: var(--hotel-grey);
+  z-index: 1;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Inter", serif;
+  font-size: 16px;
+}
+.ico {
+  width: 100%;
+  justify-content: center;
+  gap: 42.667px;
+}
+.w-95 {
+  width: 95%;
+}
+.outline_checkbox {
+  border: 1px solid #1cc3b2;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .fnt-set1 {
+    font-size: 35px !important;
+  }
+  .fnt-set2 {
+    font-size: 16px !important;
+  }
+  .fnt-set3 {
+    font-size: 28px !important;
+  }
+  .fnt-set4 {
+    font-size: 16px !important;
+  }
+  .fnt-set6 {
+    font-size: 16px !important;
+  }
+  .bg-img2 {
+    height: 100vh !important;
+  }
+  .inputStyle {
+    font-size: 16px !important;
+  }
+  .batn {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .bg-img2 {
+    height: 168vh !important;
+    border-radius: 0 !important;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+  .bg-img2 {
+    height: 200vh !important;
+  }
+  .fnt-set1 {
+    font-size: 34px;
+  }
+
+  .fnt-set1 {
+    font-family: "DM Sans", serif;
+    font-size: 39px;
+  }
+}
+@media only screen and (min-width: 1440px) and (max-width: 2000px) {
+  .bg-img2 {
+    height: 180vh !important;
+    background-position: center;
+  }
+  .fnt-set1 {
+    font-family: "DM Sans", serif;
+    font-size: 57px;
+  }
+  br {
+    display: none;
+  }
+}

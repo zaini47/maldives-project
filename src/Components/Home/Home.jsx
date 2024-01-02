@@ -8,6 +8,7 @@ import icon1 from "../../Assets/Images/icon-1.png.png";
 import icon2 from "../../Assets/Images/icon-2.png.png";
 import icon3 from "../../Assets/Images/icon-3.png.png";
 import icon4 from "../../Assets/Images/icon-4.png.png";
+import icon5 from "../../Assets/Images/icon-5.png";
 import Slider from "react-slick";
 import blog1 from "../../Assets/Images/blog-1.jpg.png";
 import blog2 from "../../Assets/Images/blog-2.jpg.png";
@@ -24,6 +25,7 @@ import SearchForm from '../Reuseable/SearchForm';
 import Testominal from "../Reuseable/Testominal";
 import Video from "../Reuseable/Video";
 import Banners from "../Reuseable/Banner";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const roomData = [
@@ -31,13 +33,37 @@ const Home = () => {
     { id: "2", typeroom: "Small Room", charges: "400$", size: "30ft", capacity: " Max person 5", bed: " King Beds", services: " Wi-Fi, Television, Bathroom", roomimg: room2 },
     { id: "3", typeroom: "Premium King ", charges: "400$", size: "30ft", capacity: " Max person 5", bed: " King Beds", services: " Wi-Fi, Television, Bathroom", roomimg: room3 },
     { id: "4", typeroom: "Room Vip King", charges: "400$", size: "30ft", capacity: " Max person 5", bed: " King Beds", services: " Wi-Fi, Television, Bathroom", roomimg: room4 }, { id: "5", typeroom: "Royal Room", charges: "400$", size: "30ft", capacity: " Max person 5", bed: " King Beds", services: " Wi-Fi, Television, Bathroom", roomimg: room5 }, { id: "6", typeroom: "Room View Sea", charges: "400$", size: "30ft", capacity: " Max person 5", bed: " King Beds", services: " Wi-Fi, Television, Bathroom", roomimg: room6 }
-];
+  ];
 
   const blog = [
     { id: "1", blogimg: blog1, head: "Low Cost Advertising", detail: "Acres of Diamonds… you’ve read the famous story or at least had it related to you.A farmer", date: "31st January,2023" },
     { id: "2", blogimg: blog2, head: "Creative Outdoor Ads", detail: "Self-doubt and fear interfere with our ability to achieve or set goals. Self-doubt and fear are", date: "31st January,2023" },
     { id: "3", blogimg: blog3, head: "It Classified How To Utilize Free", detail: "Why do you want to motivate yourself? Actually, just answering that question fully can", date: "31st January, 2023" }
   ];
+
+
+  const faq = [
+    {
+      id: "1",
+      question: "How Do I Make a Reservation?"
+    },
+    {
+      id: "2",
+      question: "What Are Your Check- In and Check - Out Times ?"
+    },
+    {
+      id: "3",
+      question: "Can I Cancel or Modify My Reservation ?"
+    },
+    {
+      id: "4",
+      question: "What Amenities and Services Do You Offer ?"
+    },
+    {
+      id: "5",
+      question: "Do You Offer Special Rates or Packages ? "
+    }
+  ]
 
   const sliderRef = useRef(null);
 
@@ -57,32 +83,46 @@ const Home = () => {
     initialSlide: 0,
     responsive: [
       {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
+        breakpoint: 1920,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          initialSlide: 1
+          initialSlide: 1,
+          infinite: true,
+          dots: false,
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          initialSlide: 1,
+        }
+      },
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        }
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
         }
       }
     ]
   };
-  console.log(roomData)
+
+
+  const naviagte = useNavigate()
+
+
   return (
     <>
       <div className="header">
@@ -92,6 +132,7 @@ const Home = () => {
           title='Welcome To Maldives'
           locat='HOTEL & RESORT'
           image={Homeimg}
+          height="100"
         />
         <SearchForm
           CheckBox='CheckBox1'
@@ -107,7 +148,7 @@ const Home = () => {
                 Maldives Hotel Luxury</p></div>
 
               <div>
-                <p className='ff-p fw-400 fs-20 text--light'>
+                <p className='ff-p fw-400 fs-20 text--light pt-5'>
                   With over 340 hotels worldwide, NH Hotel Group offers
                   a wide variety of hotels catering for a perfect stay no
                   matter where your destination.
@@ -128,36 +169,36 @@ const Home = () => {
               </div>
             </div>
             <div className="col-sm-12 col-md-6">
-              <img src={HomeAImg} alt="" />
+              <img src={HomeAImg} className="img-fluid w-100" alt="" />
             </div>
 
           </div>
 
-          <div className="row container px-4 py-4 d-flex justify-content-evenly " >
+          <div className="row  px-4 pad-sm  py-5 d-flex justify-content-evenly services " >
 
-            <div className="col-sm-12 col-md-2 text-center card py-4 px-4 justify-content-center align-items-center">
+            <div className="col-sm-12 col-md-12 col-lg-2 text-center card py-4 px-4 justify-content-center align-items-center">
               <div><img src={icon1} alt="" className='img-fluid' /></div>
               <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>Transportion</p>
             </div>
 
-            <div className="col-sm-12 col-md-2 text-center card py-4 px-4 justify-content-center align-items-center">
+            <div className="col-sm-12 col-md-12 col-lg-2 text-center card py-4 px-4 justify-content-center align-items-center">
               <div><img src={icon2} alt="" className='img-fluid' /></div>
               <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>
                 Reiseservice
               </p>
             </div>
 
-            <div className="col-sm-12 col-md-2 text-center card py-4 px-4 d-flex align-items-center flex-column">
+            <div className="col-sm-12 col-md-12 col-lg-2 text-center card py-4 px-4 d-flex align-items-center flex-column">
               <div><img src={icon3} alt="" className='img-fluid' /></div>
               <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>Spa Relaxation</p>
             </div>
-            <div className="col-sm-12 col-md-2 text-center card py-4 px-4 justify-content-center align-items-center">
+            <div className="col-sm-12 col-md-12 col-lg-2 text-center card py-4 px-4 justify-content-center align-items-center">
               <div><img src={icon4} alt="" className='img-fluid' /></div>
               <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>Restaurant</p>
             </div>
-            <div className="col-sm-12 col-md-2 text-center card py-4 px-4 justify-content-center align-items-center">
-              <div><img src={icon1} alt="" className='img-fluid' /></div>
-              <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>Transportation</p>
+            <div className="col-sm-12 col-md-12 col-lg-2 text-center card py-4 px-4 justify-content-center align-items-center">
+              <div><img src={icon5} alt="" className='img-fluid' /></div>
+              <p className='fs-20 fw-500 ff-p text-d py-2 m-0'>Bar & Drink</p>
             </div>
           </div>
         </div>
@@ -169,19 +210,19 @@ const Home = () => {
           {roomData.map((item) => (
             <div key={item.id} className="d-flex slider">
               <div className="col-sm-12 col-md-6">
-                <img src={item.roomimg} alt="" className="img-fluid h--vh" />
+                <img src={item.roomimg} alt="" className="img-fluid w-100 h--vh" />
               </div>
-              <div className="col-sm-12 col-md-6 bg-img3 slider">
-                <div className="py-4">
-                  <p className="fs-58 fw-600 ff-p text-center text-white">{item.typeroom}</p>
+              <div className="col-sm-12 col-md-6 bg-img3 slider pt-xl">
+                <div className="py-4 p-xl">
+                  <p className="fs-58 fw-600 ff-p text-start text-white px-5 pad-e-set">{item.typeroom}</p>
                   <p className="px-5 fs-38 fw-500 text-mid-light  ff-p">
                     {item.charges} <span className="fs-24 fw-500 ff-p text-white">/Day</span>
                   </p>
                 </div>
 
-                <div className="px-5">
+                <div className="px-5 slide-context p-slick-xl">
                   {["Size", "Capacity", "Bed", "Services"].map((label) => (
-                    <div key={label} className="d-flex justify-content w--30">
+                    <div key={label} className="d-flex justify-content w--30 p-slick-xl">
                       <div>
                         <p className="text-white fs-18 ff-p fw-500">{label}</p>
                       </div>
@@ -191,7 +232,7 @@ const Home = () => {
                     </div>
                   ))}
 
-                  <button className="buton4">View details</button>
+                  <button className="buton4 " onClick={() => naviagte("/Rooms/RoomsDetail")}>View details</button>
                 </div>
                 <div className="vector-photo">
                   <svg xmlns="http://www.w3.org/2000/svg" width="386" height="543" viewBox="0 0 386 543" fill="none">
@@ -224,6 +265,7 @@ const Home = () => {
                 </p>
                 <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
                 <div className="view-btn">
+                  <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
                 </div>
               </div>
             </div>
@@ -235,6 +277,9 @@ const Home = () => {
                   Entertaiment
                 </p>
                 <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                <div className="view-btn">
+                  <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                </div>
               </div>
             </div>
           </div>
@@ -245,6 +290,9 @@ const Home = () => {
                   Entertaiment
                 </p>
                 <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                <div className="view-btn">
+                  <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                </div>
               </div>
             </div>
           </div>
@@ -255,6 +303,9 @@ const Home = () => {
                   Entertaiment
                 </p>
                 <p className="py-1 m-0 fs-20 ff-w">Painting Rooms</p>
+                <div className="view-btn">
+                  <Link to="/Rooms" className="exp-btn">Explore Now<i className="fa-solid fa-arrow-right ms-2"></i></Link>
+                </div>
               </div>
             </div>
           </div>
@@ -268,17 +319,20 @@ const Home = () => {
             <div><p className="fs-36 fw-600 text-d ff-p text-center">Latest Posts From Blog</p></div>
             <div><p className="fs-18 fw-400 ff-p text-center">The French The French Revolution constituted for the conscience of the dominant aristocratic class a fall from</p></div>
 
-            <div className="d-flex justify-content-center gap-4 align-item-center">
+            <div className="d-flex justify-content-center latestpost-sm gap-4 align-item-center">
               {
                 blog.map(
                   (item) => {
                     return (
                       <div className="col-sm-12 col-md-3" key={item.id}>
-                        <div className="card">
+                        <div className="card card-bg">
                           <img src={item.blogimg} alt="" className="card-img-top img-fluid" />
                           <div className="card-body">
+
                             <p className="card-text fs-18 fw-600 text-d ff-p">{item.head}</p>
-                            <p className="card-text fs-14 fw-300 ff-p text--light">{item.detail}</p>
+                            <button className="latest-button ff-p text--light">Travel</button>
+                            <button className="latest-button ff-p text--light ms-1">Life Style</button>
+                            <p className="card-text fs-14 fw-300 ff-p text--light mt-3">{item.detail}</p>
                             <p className="card-text fs-14 fw-400 ff-p text-d">{item.date}</p>
                           </div>
                         </div>
@@ -292,16 +346,29 @@ const Home = () => {
         </div>
       </div>
       <Video />
-      <Faqs
-      title='FAQs'
-      name='Frequently Asked Questions'
-      Ques1='How Do I Make a Reservation?'
-      Ques2='What Are Your Check-In and Check-Out Times?'
-      Ques3='Can I Cancel or Modify My Reservation?'
-      Ques4='What Amenities and Services Do You Offer?'
-      Ques5='Do You Offer Special Rates or Packages?'
-      />
-      <Banners/>
+      <div className="container">
+        <div>
+          <p className="fs-52 text-center fs-600 ff-p text-d m-0">
+            FAQs
+          </p>
+        </div>
+        <div>
+          <p className="fs-20 text-center fs-400 ff-p text--light">Frequently Asked Questions</p>
+        </div>
+        <div>
+          {
+            faq.map((item) => {
+              return (
+                <Faqs
+                  item={item.id}
+                  question={item.question}
+                />
+              )
+            })
+          }
+        </div>
+      </div>
+      <Banners />
       <Footer />
     </>
   );

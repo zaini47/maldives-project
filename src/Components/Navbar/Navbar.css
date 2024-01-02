@@ -65,3 +65,8 @@ nav {
 .navbar-nav .nav-link.active{
   color: var(--hotel-primary) !important;
 }
+
+
+.box{
+  display: flex;
+}

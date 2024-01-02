@@ -1,4 +1,3 @@
-
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Hero from '../Reuseable/Hero'
@@ -92,15 +91,16 @@ function Blogs() {
                 height="80vh"
             />
 
-            <div className="container-fluid px-5">
-                    <div className="row py-5 px-5 ">
-                        <div className="col-sm-12 col-md-8 row h-50" >
+            <div className="container-fluid">
+            <div className="container pad-sm">
+                    <div className="row py-5  m-sm pad-sm ">
+                        <div className="col-sm-12 col-md-12 col-lg-8  m-sm h-50 pad-sm" >
                             {Blogsdata.map((item) => (
-                                <div className="row d-flex py-3 " key={item.id}>
-                                    <div className="col-6">
+                                <div className="row m-sm d-flex py-3 w-100" key={item.id}>
+                                    <div className="col-6 w-sm">
                                         <img src={item.blogimg} className='img-fluid rounded-3 w-100 h-100 ' alt="" />
                                     </div>
-                                    <div className="col-6">
+                                    <div className="col-6  w-sm">
                                         <div>
                                             <p className='fs-24 ff-p fw-400 text-d my-1'>
                                                 {item.date}
@@ -127,17 +127,13 @@ function Blogs() {
                                     </div>
                                 </div>
                             ))}
-                            {/* <div>
-                            <Paginate
-                             itemsPerPage={4}
-                             data={Blogsdata}
-                               />
-                            </div> */}
+                            
                         </div>
-                        <div className='col-md-4'>
+                        <div className='col-sm-12 col-md-12 col-lg-4'>
                             <Recent />
                         </div>
                     </div>
+            </div>
             </div>
             <Banners/>
             <Footer/>
